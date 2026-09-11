@@ -1,5 +1,5 @@
 name: "Setup Minecraft"
-author: "mcenv"
+author: "ReinIsNOTaDev"
 description: "Setup a Minecraft server"
 inputs:
   version:
