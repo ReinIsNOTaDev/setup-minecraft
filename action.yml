@@ -24,7 +24,7 @@ outputs:
   package:
     description: "Package used"
 runs:
-  using: "node20"
+  using: "node24"
   main: "index.js"
 branding:
   icon: "box"
