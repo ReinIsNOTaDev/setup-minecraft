@@ -25,7 +25,7 @@ outputs:
     description: "Package used"
 runs:
   using: "node24"
-  main: "index.js"
+  main: "dist/index.js"
 branding:
   icon: "box"
   color: "gray-dark"
