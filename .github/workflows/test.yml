@@ -19,10 +19,13 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "24"
-      - name: Package it
-        run: | 
-          npm ci
+      - name: Package files and commit
+        run: |
+          npm install
           npm run package
+          git add .
+          git commit --message "Package"
+          git push origin
       - name: Setup Minecraft
         id: minecraft
         uses: ReinIsNOTaDev/setup-minecraft@main
