@@ -19,8 +19,10 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "24"
-      - name: Install dependencies
-        run: npm install
+      - name: Package it
+        run: | 
+          npm ci
+          npm package
       - name: Setup Minecraft
         id: minecraft
         uses: ReinIsNOTaDev/setup-minecraft@main
