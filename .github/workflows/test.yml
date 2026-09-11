@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
       - name: Setup Minecraft
         id: minecraft
-        uses: ReinIsNOTaDev/setup-minecraft@mai
+        uses: ReinIsNOTaDev/setup-minecraft@main
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
