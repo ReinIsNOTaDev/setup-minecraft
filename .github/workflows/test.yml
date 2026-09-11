@@ -19,15 +19,6 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "24"
-      - name: Package files and commit
-        run: |
-          git config --global user.name "ReinIsNOTaDev"
-          git config --global user.email "allwhimsical@proton.me"
-          npm ci
-          npm run package
-          git add .
-          git commit --message "Package"
-          git push origin
       - name: Setup Minecraft
         id: minecraft
         uses: ReinIsNOTaDev/setup-minecraft@main
