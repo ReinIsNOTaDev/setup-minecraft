@@ -22,7 +22,7 @@ jobs:
       - name: Package it
         run: | 
           npm ci
-          npm package
+          npm run package
       - name: Setup Minecraft
         id: minecraft
         uses: ReinIsNOTaDev/setup-minecraft@main
