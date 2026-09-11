@@ -2,14 +2,14 @@
 
 "use strict";
 
-import { restoreCache, saveCache } from "@actions/cache";
-import { getInput, exportVariable, setOutput, info, setFailed, getBooleanInput, debug } from "@actions/core";
-import { HttpClient } from "@actions/http-client";
-import { mkdirP } from "@actions/io";
-import { downloadTool } from "@actions/tool-cache";
-import { createHash } from "crypto";
-import { statSync, readFileSync } from "fs";
-import { resolve } from "path";
+import { restoreCache, saveCache } from '@actions/cache';
+import { getInput, exportVariable, setOutput, info, setFailed, getBooleanInput, debug } from '@actions/core';
+import { HttpClient } from '@actions/http-client';
+import { mkdirP } from '@actions/io';
+import { downloadTool } from '@actions/tool-cache';
+import { createHash } from 'crypto';
+import { statSync, readFileSync } from 'fs';
+import { resolve } from 'path';
 
 /**
  * @typedef {{
