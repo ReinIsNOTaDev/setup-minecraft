@@ -21,7 +21,9 @@ jobs:
           node-version: "24"
       - name: Package files and commit
         run: |
-          npm install
+          git config --global user.name "ReinIsNOTaDev"
+          git config --global user.email "allwhimsical@proton.me"
+          npm ci
           npm run package
           git add .
           git commit --message "Package"
